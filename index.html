@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+            <h2 class="lenght active">Lenght</h2>
+            <h2 class="weight">Weight</h2>
+            <h2 class="temperature">Temperature</h2>
+        </div>
+
+
+        <div class="form-container">
+
+            <!-- {% if sol %}
+            <div class="res">
+                <h3>Result of your calculation</h3>
+                <h2>{{value}} {{select_from}} = {{sol}} {{select_to}}</h2>
+                <button class="back">RESET</button>
+            </div>
+            {% endif %} -->
+            
+            <form action="">
+                <input type="number"min="1" name="value" id="value" placeholder="Enter the length to convert" required>
+            <div>
+                <label for="selectFrom" >From</label>
+                <select name="selectFrom" id="from">
+                    <option value="milimeter">Milimeter</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="meter" selected>Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                    <option value="yard">Yard</option>
+                    <option value="mile">Mile</option>
+                </select>
+            </div>
+            <div>
+                <label for="selectTo" >To</label>
+                <select name="selectTo" id="to">
+                    <option value="milimeter">Milimeter</option>
+                    <option value="centimeter" selected>Centimeter</option>
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                    <option value="yard">Yard</option>
+                    <option value="mile">Mile</option>
+                </select>
+            </div>
+
+            <input type="submit" class="button" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
